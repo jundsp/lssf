@@ -12,7 +12,7 @@ function [y,x,m0,P0,A,Q,C,R] = data_loader(trial)
 
     phase = 2*pi*rand;
     m0 = [cos(phase); sin(phase)];
-    A = jun_phasor(2*pi*5.55/N)*.999;
+    A = phasor(2*pi*5.55/N)*.999;
 
     C = randn(dimy,dimx);
     C = bsxfun(@rdivide, C, sum(abs(C),2));
