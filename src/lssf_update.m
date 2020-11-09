@@ -70,7 +70,6 @@ function [mu, V, logml] = lssf_update(m,P,y,C,R)
     % Compute the Log Marginal Likelihood
     phi_m = erfc(e1);
     phi_p = erfc(e2)*exp(2*yt/R);
-    tempsum = log(phi_m+phi_p);
-    logml = -log(4*R) + (S-2*R*yt)/(2*R^2) + tempsum;
+    logml = -log(4*R) + (S-2*R*yt)/(2*R^2) + log(phi_m+phi_p);
  
 end
