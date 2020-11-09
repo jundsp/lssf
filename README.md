@@ -9,7 +9,7 @@ The script `demo.m` runs a demonstration of the Bayesian filter. Three different
 It uses exact inference to infer the latent state sequence from temporal data. It successfully filters outliers and heavy-tailed noise, in addition to Laplace noise, Gaussian noise, and Cauchy noise. It is as fast as the Kalman filter.
 
 <p align="center">
-  <img src="https://www.music.mcgill.ca/~julian/wp-content/uploads/2020/11/lssf_outlier.png" width="600" />
+  <img src="https://www.music.mcgill.ca/~julian/wp-content/uploads/2020/11/lssf_outlier.png" width="500" />
 </p>
 
 
