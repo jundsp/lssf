@@ -26,11 +26,14 @@ function [y,x,m0,P0,A,Q,C,R] = data_loader(trial)
     end
     
     switch trial
+        % Laplace-distributed noise.
         case 'laplace noise'
             R = .1*eye(dimy);
             for n = 1:N
                 y(:,n) = laprnd(C*x(:,n),R,1);
             end
+            
+        % Gaussian noise with outliers occuring randomly every 1 in 10 samples.
         case 'outliers'
             R = .01*eye(dimy);
             for n = 1:N
@@ -40,11 +43,13 @@ function [y,x,m0,P0,A,Q,C,R] = data_loader(trial)
                     y(:,n) = mvnrnd(C*x(:,n),R);
                 end
             end
+            
+        % Gaussian noise that is much 'louder' when 30 < n < 60.
         case 'noise switch'
             R = .001*eye(dimy);
             for n = 1:N
                 if n > 30 && n < 60
-                    y(:,n) = mvnrnd(0,1);
+                    y(:,n) = mvnrnd(C*x(:,n),1);
                 else
                     y(:,n) = mvnrnd(C*x(:,n),R);
                 end
