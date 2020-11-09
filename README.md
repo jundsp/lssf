@@ -7,3 +7,6 @@ J. Neri, P. Depalle, R. Badeau, "<a href="https://ieeexplore.ieee.org/document/9
 The script `demo.m` runs a demonstration of the Bayesian filter. Three different test data sequences are available to choose from: Laplace noise, outliers, and noise switch.
 
 It uses exact inference to infer the latent state sequence from temporal data. It successfully filters outliers and heavy-tailed noise, in addition to Laplace noise, Gaussian noise, and Cauchy noise. It is as fast as the Kalman filter.
+
+<img src="https://www.music.mcgill.ca/~julian/wp-content/uploads/2020/11/lssf_outlier.png" width="40" height="40" />
+
