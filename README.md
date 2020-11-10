@@ -6,7 +6,7 @@ Matlab code that implements a state space filter for univariate Laplace-distribu
 
 This Bayesian filter uses exact inference to infer the latent state sequence from temporal data. It successfully filters outliers and heavy-tailed noise, in addition to Laplace noise, Gaussian noise, and Cauchy noise. It is as fast as the Kalman filter.
 
-<h3> Instructions </h3>
+### Instructions
 
 The script `demo.m` runs a demonstration of the LSSF. Three different test data sequences are available to choose from: Laplace noise, outliers, and noise switch.
 
