@@ -1,3 +1,9 @@
+% Loads test data for the Laplace state space filter.
+%
+% Author: Julian Neri
+% Affil: McGill University
+% Date: May 1, 2020
+
 function [y,x,m0,P0,A,Q,C,R] = data_loader(trial)
 
     % Observations (Time samples)

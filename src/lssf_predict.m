@@ -10,7 +10,7 @@
 % pp. 5880-5884, Barcelona, Spain, 2020. 
 %
 % Author: Julian Neri
-% Affil: McGill University, Montreal, CA
+% Affil: McGill University
 % Date: May 1, 2020
 
 function [m,P] = lssf_predict(mu,V,A,Q)

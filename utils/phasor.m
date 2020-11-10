@@ -1,3 +1,12 @@
+% Rotation matrix
+%
+% omega: angle of rotation in radians
+% D: dimension of matrix (result is zero-padded when D > 2).
+%
+% Author: Julian Neri
+% Affil: McGill University
+% Date: May 1, 2020
+
 function R = phasor(omega, D)
 
 if nargin < 2

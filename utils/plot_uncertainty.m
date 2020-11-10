@@ -1,3 +1,9 @@
+% Plots the mean and uncertainty (variance) of time-series data
+%
+% Author: Julian Neri
+% Affil: McGill University
+% Date: May 1, 2020
+
 function plot_uncertainty(time,mean,variance)
     mean = mean(:)'; variance = variance(:)';
     sigma2 = sqrt(variance);
