@@ -22,7 +22,7 @@
 % pp. 5880-5884, Barcelona, Spain, 2020. 
 %
 % Author: Julian Neri
-% Affil: McGill University, Montreal, CA
+% Affil: McGill University
 % Date: May 1, 2020
 
 function [mu, V, logml] = lssf_update(m,P,y,C,R)
