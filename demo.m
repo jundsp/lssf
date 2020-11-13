@@ -21,7 +21,7 @@ trial = 'outliers';
 
 %% Laplace State Space Filtering
 
-% Data noise scale R (Laplace) and state noise covariance Q (Guassian)
+% Data noise scale R (Laplace) and state noise covariance Q (Gaussian)
 R = .1; 
 Q = 1e-3*eye(2);
 % Isotropic Gaussian prior over initial state p(x_1).
