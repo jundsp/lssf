@@ -10,8 +10,4 @@ This Bayesian filter uses exact inference to infer the latent state sequence fro
 
 The script `demo.m` runs a demonstration of the LSSF. Three different test data sequences are available to choose from: Laplace noise, outliers, and noise switch.
 
-<p align="center">
-  <img src="https://www.music.mcgill.ca/~julian/wp-content/uploads/2020/11/lssf_outlier.png" width="500" />
-</p>
-
 
